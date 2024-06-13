@@ -1,0 +1,68 @@
+What is a Group Policy?
+
+Group Policy in Windows Server is a feature used to manage and configure operating systems, applications, 
+and user settings in an Active Directory environment. 
+
+It allows administrators to implement specific configurations for users and computers across a network, 
+ensuring consistent and secure management.
+
+Group Policy has thre (3) major components
+  => Group Policy Objects (GPOs):
+       - These are collections of settings created using the Group Policy Management Console (GPMC).
+       - GPOs can be linked to Active Directory containers such as sites, domains, or organizational units (OUs).
+
+  => Group Policy Management Console (GPMC):
+       - A Microsoft Management Console (MMC) snap-in that provides a single interface for managing GPOs.
+       - It simplifies the management of Group Policy across the entire organization.
+
+  => Group Policy Client:
+       - A service that runs on client computers to apply the settings defined in GPOs.
+       - It ensures that the policies are enforced according to the administrator's configuration.
+
+Types of Policies
+  => Computer Configuration:
+       - These policies are applied to computers, regardless of who logs on to them.
+       - Includes settings for software installation, scripts, security options, and more.
+
+  => User Configuration:
+      - These policies are applied to users, regardless of which computer they log on to.
+      - Includes settings for software installation, folder redirection, Internet Explorer settings, and more.
+
+Common Uses of Group Policy
+  Security Settings: 
+      - Enforce password policies, account lockout policies, and other security-related settings.
+  Software Deployment: 
+      - Automate the installation, update, and removal of software applications.
+  Startup/Shutdown Scripts: 
+      - Execute scripts during the startup or shutdown of a computer.
+  Logon/Logoff Scripts: 
+      - Execute scripts when a user logs on or off.
+  Folder Redirection: 
+      - Redirect folders such as My Documents, Desktop, and others to network locations.
+  Internet Explorer Maintenance: 
+      - Manage Internet Explorer settings.
+
+Advantages of Using Group Policy
+  Centralized Management: 
+      - Simplifies the administration of large numbers of computers and users.
+  Consistency: 
+      - Ensures that all users and computers have a consistent set of policies applied.
+  Security: 
+      - Enhances security by enforcing standardized security settings and configurations.
+  Automation: 
+      - Reduces the need for manual configuration and ensures that settings are applied automatically.
+
+How Group Policy Works
+  Creation of GPOs: 
+      - Administrators create GPOs using the GPMC.
+  Linking GPOs: 
+      - GPOs are linked to Active Directory containers such as sites, domains, or OUs.
+  Policy Application: 
+      - The Group Policy Client service on client computers retrieves the settings from the GPOs 
+        and applies them.
+  Refresh Interval: 
+      - By default, Group Policy is refreshed every 90 minutes on client computers and every 5 minutes 
+        on domain controllers.  
+      - By leveraging Group Policy, administrators can effectively manage and secure their Windows Server 
+        environments, ensuring that policies are consistently applied across all users and computers in the network.
+
