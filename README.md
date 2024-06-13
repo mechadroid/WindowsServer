@@ -1,7 +1,7 @@
 # WindowsServer
 My Journey to windows server
 
-I was hired in a company that everthing on its core operations depends on Microsoft,
+I was hired in a company that everything on its core operations depends on Microsoft,
 though on my previous jobs i have work with microsoft products, im not totally into 
 learning Microsoft Server (personal preferrence), and now, i do not have a choice but
 to accept the fact that i have to learned microsoft server on my own, no training provided
